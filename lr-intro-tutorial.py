@@ -5,5 +5,3 @@ print("hello" + " " + firstname + " " + lastname)
 
 
 
-
-

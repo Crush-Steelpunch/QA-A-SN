@@ -1,4 +1,4 @@
-def lrTestMethod(invar1: str):
+def lrTestMethod(invar1):
     if invar1 < 5:
         invar1 = invar1 + 5
         return [invar1, True]

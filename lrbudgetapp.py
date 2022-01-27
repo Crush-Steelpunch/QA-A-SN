@@ -4,9 +4,12 @@ pdb.set_trace()
 
 class Category:
 
+    allclasses = []
+
     # we need a balance attribute
     def __init__(self,balance=0):
         self.balance = balance
+        self.allclasses.append(self)
     
 
     # we need a deposit function
@@ -45,3 +48,7 @@ clothes.deposit(60)
 print(clothes.balance)
 clothes.withdrawl(12)
 print(clothes.balance)
+
+print(food.allclasses) 
+for i in food.allclasses:
+    print(i,":",i.balance)
